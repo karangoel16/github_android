@@ -20,7 +20,6 @@ import java.util.List;
  *
  */
 public class GithubFragment extends BaseFragment {
-
     UserFeatureViewAdapter userFeatureViewAdapter;
     RecyclerView recyclerView;
     Context context;
