@@ -15,10 +15,13 @@ import android.view.ViewGroup;
  */
 public abstract class BaseFragment extends Fragment {
 
+    BaseFragment(){
+
+    }
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        final View fragmentView =inflater.inflate(layoutId(), container, false);
+        final View fragmentView = inflater.inflate(layoutId(), container, false);
         bindView(fragmentView);
         return fragmentView;
     }
